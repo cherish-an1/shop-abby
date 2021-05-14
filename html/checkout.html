@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="/css/cart.css">
+<title>Shop Abby || Checkout</title>
+</head>
+<body id="checkout-page">
+
+    <img src="/assets/PNG.png" alt="" class="ml-5 mt-3 pt-3" width="7%">
+
+    <div id="site" class="container">
+        <header id="masthead">
+            <h1></h1>
+        </header>
+        <div id="content">
+            <h1>Checkout</h1>
+                <table id="checkout-cart" class="shopping-cart">
+                  <thead>
+                    <tr>
+                        <th scope="col">Item</th>
+                        <th scope="col">Qty</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  
+                  </tbody>
+                </table>
+             <div id="pricing">
+                
+                <p id="shipping">
+                    <strong>Shipping</strong>: <span id="sshipping"></span>
+                </p>
+                
+                <p id="sub-total">
+                    <strong>Total</strong>: <span id="stotal"></span>
+                </p>
+             </div>
+             
+             <form action="order.html" method="post" id="checkout-order-form">
+                 <h2>Your Details</h2>
+                 
+                 <fieldset id="fieldset-billing">
+                     <legend>Billing</legend>
+                     <div>
+                         <label for="name">Name</label>
+                         <input type="text" name="name" id="name" data-type="string" data-message="This field cannot be empty" />
+                     </div>
+                     <div>
+                         <label for="email">Email</label>
+                         <input type="text" name="email" id="email" data-type="expression" data-message="Not a valid email address" />
+                     </div>
+                     <div>
+                         <label for="city">City</label>
+                         <input type="text" name="city" id="city" data-type="string" data-message="This field cannot be empty" />
+                     </div>
+                     <div>
+                         <label for="address">Address</label>
+                         <input type="text" name="address" id="address" data-type="string" data-message="This field cannot be empty" />
+                     </div>
+                     <div>
+                         <label for="zip">ZIP Code</label>
+                         <input type="text" name="zip" id="zip" data-type="string" data-message="This field cannot be empty" />
+                     </div>
+                     <div>
+                         <label for="country">Country</label>
+                         <select name="country" id="country" data-type="string" data-message="This field cannot be empty">
+                             <option value="">Select</option>
+                             <option value="De">Denmark</option>
+                             <option value="IN">India</option>
+                         </select>
+                     </div>
+                 </fieldset>
+                 
+                 <div id="shipping-same">Same as Billing <input type="checkbox" id="same-as-billing" value=""/></div>
+                 
+                 <fieldset id="fieldset-shipping">
+                     
+                     <legend>Shipping</legend>
+                     
+                     <div>
+                         <label for="sname">Name</label>
+                         <input type="text" name="sname" id="sname" data-type="string" data-message="This field cannot be empty" />
+                     </div>
+                     <div>
+                         <label for="semail">Email</label>
+                         <input type="text" name="semail" id="semail" data-type="expression" data-message="Not a valid email address" />
+                     </div>
+                     <div>
+                         <label for="scity">City</label>
+                         <input type="text" name="scity" id="scity" data-type="string" data-message="This field cannot be empty" />
+                     </div>
+                     <div>
+                         <label for="saddress">Address</label>
+                         <input type="text" name="saddress" id="saddress" data-type="string" data-message="This field cannot be empty" />
+                     </div>
+                     <div>
+                         <label for="szip">ZIP Code</label>
+                         <input type="text" name="szip" id="szip" data-type="string" data-message="This field cannot be empty" />
+                     </div>
+                     <div>
+                         <label for="scountry">Country</label>
+                         <select name="scountry" id="scountry" data-type="string" data-message="This field cannot be empty">
+                             <option value="">Select</option>
+                             <option value="De">Denmark</option>
+                             <option value="IN">India</option>
+                         </select>
+                     </div>
+                 </fieldset>
+                 
+                 <p><input type="submit" id="submit-order" value="Submit" class="btn" /></p>
+             
+             </form>
+        </div>
+        
+        
+    
+    </div>
+    <!-- footer -->
+    <footer style="background-color: plum;">
+        <section class="footer-sect">
+            <footer>
+              <div class="container text-md-left ">
+                
+                <div class="row row-foot">
+                    <div class="col-md-2 mx-auto logo">
+                        <img src="/assets/PNG.png" class="desktop-logo" alt="" width="100%">
+                        <img src="/assets/PNG.png" class="mobile-logo" alt="" width="30%">
+                    </div>
+                    <hr class="clearfix w-100 d-md-none">
+                    <div class="col-md-2 mx-auto">
+                        <h5 class="font-weight-bold mt-3 mb-3" >Shop abby</h5>
+                        <ul class="list-unstyled " style="line-height: 2.25rem;">
+                          <li>
+                            <a class="no-col mb-2" href="#!">Product</a>
+                          </li>
+                          <li>
+                            <a class="no-col" href="#!">About us</a>
+                          </li>
+                          <li>
+                            <a class="no-col" href="#!">Our services</a>
+                          </li>
+                          <li>
+                            <a class="no-col" href="#!">Contact</a>
+                          </li>
+                        </ul>
+                    </div>
+                    <hr class="clearfix w-100 d-md-none">
+                    <div class="col-md-2 mx-auto">
+                        <h5 class="font-weight-bold mt-3 mb-4">Support</h5>
+                        <ul class="list-unstyled" style="line-height: 2.25rem;">
+                            <li>
+                                <a class="no-col " href="#!">FAQ</a>
+                            </li>
+                            <li>
+                                <a class="no-col" href="#!">Terms and Conditions</a>
+                            </li>
+                            <li>
+                                <a class="no-col" href="#!">Customer Support</a>
+                            </li>
+                            <li>
+                                <a class="no-col" href="#!">Online Suport</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr class="clearfix w-100 d-md-none">
+                    <div class="col-md-3 mx-auto newsletter">
+                        <h5 class="newsletter font-weight-bold mt-3">Newsletter</h5>
+                        <p class="mt-4">Email Address</p>
+                        <input type="text" class="myemail"> <br>
+                        <button class=" story mt-3">Sign up</button>
+                  </div>
+                  <div class="col-md zz">
+      
+                    <h5 class="font-weight-bold mt-3 mb-3 ">Follow Us</h5>
+             
+                  <div class="my-span-ms">
+                    <span>
+                      <a href="#">
+                        <img class="pl-2" src="assets/fb.svg" alt="">
+                      </a>
+                      <a href="#">
+                        <img class="" src="/assets/linkln.svg" alt="">
+                      </a>
+                    </span>
+    
+                    <span>
+                      <a href="#">
+                        <img class="" src="/assets/twitter.svg" alt="">
+                      </a>
+                      <a href="#">
+                        <img class="" src="/assets/socinsta.svg" alt="">
+                      </a>
+                    </span>
+                  </div>
+               
+                  <div class="my-span-bg">
+                    <div class="row aa">
+                      <div class="col-md aa1">
+                        <img class="" src="/assets/fb.svg" alt="">
+                      </div>
+      
+                      <div class="col-md aa2">
+                        <img class="" src="/assets/linkln.svg" alt="">
+                      </div>
+                    </div>
+      
+                    <div class="row bb">
+                      <div class="col-md bb1">
+                        <img class="" src="/assets/twitter.svg" alt="">
+                      </div>
+      
+                      <div class="col-md bb2">
+                        <img class=" " src="/assets/socinsta.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                  <a href="#"> shopabby.com</a>
+              </div>
+      
+            </footer>
+        </section>
+    </footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>
